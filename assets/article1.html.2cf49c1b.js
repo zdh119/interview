@@ -1,0 +1,52 @@
+import{_ as n}from"./plugin-vue_export-helper.21dcd24c.js";import{e as s}from"./app.ec4813a0.js";const a={},p=s(`<h1 id="\u6587\u7AE0-1" tabindex="-1"><a class="header-anchor" href="#\u6587\u7AE0-1" aria-hidden="true">#</a> \u6587\u7AE0 1</h1><h2 id="\u6807\u9898-2" tabindex="-1"><a class="header-anchor" href="#\u6807\u9898-2" aria-hidden="true">#</a> \u6807\u9898 2</h2><p>\u8FD9\u91CC\u662F\u5185\u5BB9\u3002</p><div class="language-java ext-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token operator">*</span></span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">Main</span><span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span>
+  <span class="token comment">// \u6A21\u62DF\u51FD\u6570\u8C03\u7528\u6808</span>
+  <span class="token keyword">private</span> <span class="token class-name">Stack</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">TreeNode</span><span class="token punctuation">&gt;</span></span> stk <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Stack</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// \u5DE6\u4FA7\u6811\u679D\u4E00\u64B8\u5230\u5E95</span>
+  <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">pushLeftBranch</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> p<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">while</span> <span class="token punctuation">(</span>p <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token doc-comment comment">/*******************/</span>
+          <span class="token doc-comment comment">/** \u524D\u5E8F\u904D\u5386\u4EE3\u7801\u4F4D\u7F6E **/</span>
+          <span class="token doc-comment comment">/*******************/</span>
+          stk<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          p <span class="token operator">=</span> p<span class="token punctuation">.</span>left<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">public</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span> <span class="token function">traverse</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// \u6307\u5411\u4E0A\u4E00\u6B21\u904D\u5386\u5B8C\u7684\u5B50\u6811\u6839\u8282\u70B9</span>
+      <span class="token class-name">TreeNode</span> visited <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TreeNode</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// \u5F00\u59CB\u904D\u5386\u6574\u68F5\u6811</span>
+      <span class="token function">pushLeftBranch</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>stk<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token class-name">TreeNode</span> p <span class="token operator">=</span> stk<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+          <span class="token comment">// p \u7684\u5DE6\u5B50\u6811\u88AB\u904D\u5386\u5B8C\u4E86\uFF0C\u4E14\u53F3\u5B50\u6811\u6CA1\u6709\u88AB\u904D\u5386\u8FC7</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>left <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">||</span> p<span class="token punctuation">.</span>left <span class="token operator">==</span> visited<span class="token punctuation">)</span> 
+            <span class="token operator">&amp;&amp;</span> p<span class="token punctuation">.</span>right <span class="token operator">!=</span> visited<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token doc-comment comment">/*******************/</span>
+              <span class="token doc-comment comment">/** \u4E2D\u5E8F\u904D\u5386\u4EE3\u7801\u4F4D\u7F6E **/</span>
+              <span class="token doc-comment comment">/*******************/</span>
+              <span class="token comment">// \u53BB\u904D\u5386 p \u7684\u53F3\u5B50\u6811</span>
+              <span class="token function">pushLeftBranch</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+          <span class="token comment">// p \u7684\u53F3\u5B50\u6811\u88AB\u904D\u5386\u5B8C\u4E86</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token punctuation">.</span>right <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">||</span> p<span class="token punctuation">.</span>right <span class="token operator">==</span> visited<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token doc-comment comment">/*******************/</span>
+              <span class="token doc-comment comment">/** \u540E\u5E8F\u904D\u5386\u4EE3\u7801\u4F4D\u7F6E **/</span>
+              <span class="token doc-comment comment">/*******************/</span>
+              <span class="token comment">// \u4EE5 p \u4E3A\u6839\u7684\u5B50\u6811\u88AB\u904D\u5386\u5B8C\u4E86\uFF0C\u51FA\u6808</span>
+              <span class="token comment">// visited \u6307\u9488\u6307\u5411 p</span>
+              visited <span class="token operator">=</span> stk<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="\u6807\u9898-3" tabindex="-1"><a class="header-anchor" href="#\u6807\u9898-3" aria-hidden="true">#</a> \u6807\u9898 3</h3><p>\u8FD9\u91CC\u662F\u5185\u5BB9\u3002 ::: info</p><div class="language-java ext-java line-numbers-mode"><pre class="language-java"><code><span class="token number">123</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>:::</p>`,8);function e(t,c){return p}var l=n(a,[["render",e],["__file","article1.html.vue"]]);export{l as default};

@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://interview.zhangdehong.site/interview/sitemap.xml
+Sitemap: https://interview.zhangdehong.site/sitemap.xml

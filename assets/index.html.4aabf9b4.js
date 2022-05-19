@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{c as t,o as r,a as o,d as s}from"./app.4fb019b7.js";const a={},n={id:"spring",tabindex:"-1"},c=o("a",{class:"header-anchor",href:"#spring","aria-hidden":"true"},"#",-1),_=s(" Spring"),i=[c,_];function d(h,f){return r(),t("h1",n,i)}var p=e(a,[["render",d],["__file","index.html.vue"]]);export{p as default};
