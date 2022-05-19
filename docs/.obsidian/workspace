@@ -1,0 +1,118 @@
+{
+  "main": {
+    "id": "400e0c19649ad940",
+    "type": "split",
+    "children": [
+      {
+        "id": "5639cd1aa08cab89",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "多线程/AQS.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ae5f53f3e2887d58",
+    "type": "split",
+    "children": [
+      {
+        "id": "bad4c22c235fbcd6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eb0199d26ada7b30",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "77bda629db567780",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "47747ce4e6f1150f",
+    "type": "split",
+    "children": [
+      {
+        "id": "de4bd10b598bca80",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "80f2fcfda66e867b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "多线程/AQS.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "002633c65f4f6cdc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fcd43b51d2271e32",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "多线程/AQS.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "5639cd1aa08cab89",
+  "lastOpenFiles": [
+    "多线程/AQS.md",
+    "未命名.md",
+    "Templates/interview.md",
+    "Templates/blog.md"
+  ]
+}
