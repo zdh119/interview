@@ -37,7 +37,7 @@ export default hopeTheme({
   // 是否显示页脚
   displayFooter: true,
 
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+  pageInfo: ["Author", "Original", "Date", "ReadingTime", "Word"],
   // 深色模式
   darkmode: "switch",
   // 主题颜色 可以直接设置themeColor: false禁用
@@ -55,9 +55,12 @@ export default hopeTheme({
   pure: false,
   // 路径导航
   breadcrumb: true,
-  // 页面信息
-  pageInfo: ["Author", "Date", "ReadingTime", "Word"],
-  
+
+  encrypt: {
+    config: {
+      "/guide/encrypt.html": ["1234"],
+    },
+  },
   blog: {
     description: "一个前端开发者",
     intro: "/intro.html",
@@ -93,13 +96,6 @@ export default hopeTheme({
       Zhihu: "https://example.com",
     },
   },
-
-  encrypt: {
-    config: {
-      "/guide/encrypt.html": ["1234"],
-    },
-  },
-
   plugins: {
     blog: {
       autoExcerpt: true,
@@ -113,10 +109,10 @@ export default hopeTheme({
        * Using giscus
        */
       type: "giscus",
-      repo: "zdh119/blog-comments",
-      repoId: "R_kgDOHVW8Tw",
+      repo: "zdh119/interview",
+      repoId: "R_kgDOHXHkRQ",
       category: "Announcements",
-      categoryId: "DIC_kwDOHVW8T84CPK-u",
+      categoryId: "DIC_kwDOHXHkRc4CPL6r",
       // mapping: "title"
 
       /**
