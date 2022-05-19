@@ -1,7 +1,7 @@
 {
   "name": "interview",
   "version": "2.0.0",
-  "description": "A project of vuepress-theme-hope",
+  "description": "面试总结",
   "license": "MIT",
   "scripts": {
     "docs:build": "vuepress build docs",

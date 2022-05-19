@@ -7,8 +7,7 @@ export default defineUserConfig({
   title: "面试",
   description: "江鸟的面试总结",
   // 仓库地址
-
-  base: "/interview/",
+  base: "/",
   // 指定页面文件的 Patterns, 相对于 Source 目录
   pagePatterns: ["**/*.md", "!.vuepress", "!node_modules", "!Templates"],
   head: [
