@@ -19,7 +19,7 @@ export default defineUserConfig({
       },
     ],
   ],
-  
+  shouldPrefetch: false,
   theme,
   // 插件
   plugins: [

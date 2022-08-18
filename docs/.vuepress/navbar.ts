@@ -42,7 +42,7 @@ export default navbar([
   {
     text: "系统设计",
     icon: "edit",
-    link: "/系统设计与优化/"
+    link: "/系统设计优化/"
   },
   {
     text: "主题文档",
