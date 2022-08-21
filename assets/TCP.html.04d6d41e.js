@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{c as t,o,a,d as c}from"./app.fcf0f97d.js";const r={},s={id:"tcp",tabindex:"-1"},_=a("a",{class:"header-anchor",href:"#tcp","aria-hidden":"true"},"#",-1),n=c(" TCP"),d=[_,n];function i(h,f){return o(),t("h1",s,d)}var p=e(r,[["render",i],["__file","TCP.html.vue"]]);export{p as default};
